@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Logan Czarnecki personal website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Logan Czarnecki — personal website. About me, blog, cat photos, and contact.">
+  <title>Logan Czarnecki</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<h1>This site is a work in progress</h1>
+  <!-- ===== shared header (keep in sync across pages) ===== -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">Logan Czarnecki</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" class="active" aria-current="page">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="cat.html">Cat</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <!-- ===== intro / about me ===== -->
+    <p class="eyebrow">About</p>
+    <h1 class="page-title">Hi, I'm Logan.</h1>
+    <!-- TODO: replace this bio with your own. -->
+    <p class="lead">
+      I'm a software engineer based in [your city]. I like building useful things,
+      [your interests here], and spending time with my cat. This is my corner of the
+      web — feel free to look around.
+    </p>
+    <p class="muted">
+      Want the short version? Here's my resume. You can also
+      <a href="assets/resume.pdf">download it as a PDF</a>.
+    </p>
+
+    <!-- ===== resume ===== -->
+    <!-- TODO: replace the placeholder entries below with your real history. -->
+    <h2 class="section-title">Experience</h2>
+
+    <div class="resume-item">
+      <div class="resume-item__head">
+        <p class="resume-item__role">Job Title · <span class="resume-item__org">Company Name</span></p>
+        <span class="resume-item__date">2023 — Present</span>
+      </div>
+      <ul>
+        <li>Key accomplishment or responsibility, with a measurable result if you have one.</li>
+        <li>Another highlight — what you built, owned, or improved.</li>
+        <li>Tools/tech you used here.</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <div class="resume-item__head">
+        <p class="resume-item__role">Previous Title · <span class="resume-item__org">Earlier Company</span></p>
+        <span class="resume-item__date">2021 — 2023</span>
+      </div>
+      <ul>
+        <li>What you accomplished in this role.</li>
+        <li>Another bullet point.</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">Education</h2>
+    <div class="resume-item">
+      <div class="resume-item__head">
+        <p class="resume-item__role">Degree · <span class="resume-item__org">University Name</span></p>
+        <span class="resume-item__date">2017 — 2021</span>
+      </div>
+      <ul>
+        <li>Major / focus, honors, relevant coursework or activities.</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills">
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>React</li>
+      <li>SQL</li>
+      <li>Git</li>
+      <li>Add your own…</li>
+    </ul>
+
+    <p style="margin-top: var(--space-12)">
+      <a class="btn" href="assets/resume.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download Resume (PDF)
+      </a>
+    </p>
+  </main>
+
+  <!-- ===== shared footer (keep in sync across pages) ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Logan Czarnecki</p>
+      <div class="footer-links">
+        <a href="mailto:loganczarnecki1997@gmail.com">Email</a>
+        <a href="https://github.com/logan-czar" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/in/lczarnecki/" rel="me">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
