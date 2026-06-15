@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cat">
-  <rect width="64" height="64" rx="14" fill="#b4541e"/>
-  <g fill="none" stroke="#fbfaf7" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M18 24 L16 13 L27 20" fill="#fbfaf7"/>
-    <path d="M46 24 L48 13 L37 20" fill="#fbfaf7"/>
-    <path d="M16 30 a16 15 0 0 0 32 0 a16 15 0 0 0 -32 0 Z" fill="#fbfaf7"/>
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M18 24 L16 13 L27 20" fill="#ffffff"/>
+    <path d="M46 24 L48 13 L37 20" fill="#ffffff"/>
+    <path d="M16 30 a16 15 0 0 0 32 0 a16 15 0 0 0 -32 0 Z" fill="#ffffff"/>
   </g>
-  <g fill="#b4541e">
+  <g fill="#111111">
     <circle cx="26" cy="33" r="2.4"/>
     <circle cx="38" cy="33" r="2.4"/>
   </g>
-  <g stroke="#b4541e" stroke-width="2" stroke-linecap="round">
+  <g stroke="#111111" stroke-width="2" stroke-linecap="round">
     <path d="M32 38 v3"/>
     <path d="M22 39 h-7 M22 42 h-6"/>
     <path d="M42 39 h7 M42 42 h6"/>
