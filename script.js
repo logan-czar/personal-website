@@ -32,6 +32,10 @@
       .split(",")
       .map(function (s) { return s.trim(); })
       .filter(Boolean);
+    // Optional per-photo alt text, "|"-separated and positionally matched.
+    var alts = (gallery.dataset.alts || "")
+      .split("|")
+      .map(function (s) { return s.trim(); });
 
     var pending = names.length;
     var loaded = 0;
@@ -53,10 +57,10 @@
       // Create each figure up front (in order) so the grid keeps the listed
       // order regardless of which image loads first. Listeners are attached
       // BEFORE src is set, so a missing file can never slip through.
-      names.forEach(function (name) {
+      names.forEach(function (name, i) {
         var fig = document.createElement("figure");
         var img = document.createElement("img");
-        img.alt = "My cat";
+        img.alt = alts[i] || "OJ the cat";
         fig.style.display = "none";
         fig.appendChild(img);
         gallery.appendChild(fig);
